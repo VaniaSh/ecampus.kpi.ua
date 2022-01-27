@@ -3,7 +3,7 @@ name: Build ecampus.kpi.ua
 on:
   push:
     branches:
-      - master
+      - ua-v3
 
 jobs:
   build-and-deploy:
@@ -26,8 +26,8 @@ jobs:
     - name: Build Docker image
       run: |          
         now=$(date +%Y%m%d%H%M%S)
-        tag1="kpiua/ecampus-kpi-ua:$now"
-        tag2="kpiua/ecampus-kpi-ua:latest"
+        tag1="kpiua/ecampus-kpi-ua:ui-v3-$now"
+        tag2="kpiua/ecampus-kpi-ua:ui-v3-latest"
         
         docker build ./ --file ./.dockerfile --tag $tag1 --tag $tag2
         

@@ -3,8 +3,7 @@
 		<v-app-bar
 			:clipped-left="$vuetify.breakpoint.lgAndUp"
 			app
-			color="blue darken-3"
-			dark
+			color="white"
 		>
 			<v-app-bar-nav-icon
 				@click.stop="drawer = !drawer"
@@ -16,16 +15,13 @@
 				flat
 				solo-inverted
 				hide-details
-				prepend-inner-icon="mdi-magnify"
+				append-icon="mdi-magnify"
 				label="Глобальний пошук..."
 				class="hidden-sm-and-down"
 			></v-text-field>
 			<v-spacer></v-spacer>
 			<v-btn icon>
-				<v-icon>mdi-apps</v-icon>
-			</v-btn>
-			<v-btn icon>
-				<v-icon>mdi-bell</v-icon>
+				<v-icon>mdi-bell-outline</v-icon>
 			</v-btn>
 		</v-app-bar>
 
@@ -34,7 +30,7 @@
 			:clipped="$vuetify.breakpoint.lgAndUp"
 			app
 		>
-			<v-list dense>
+			<v-list dense shaped>
 				<template v-for="item in items">
 					<v-row
 						v-if="item.heading"
@@ -58,6 +54,7 @@
 							item.model ? item.icon : item['icon-alt']
 						"
 						append-icon=""
+						
 					>
 						<template v-slot:activator>
 							<v-list-item-content>
@@ -71,6 +68,7 @@
 							:key="i"
 							link
 							:to="child.link"
+							active-class="green--text text--accent-4"
 						>
 							<v-list-item-action v-if="child.icon">
 								<v-icon>{{ child.icon }}</v-icon>
@@ -82,7 +80,7 @@
 							</v-list-item-content>
 						</v-list-item>
 					</v-list-group>
-					<v-list-item v-else :key="item.text" link :to="item.link">
+					<v-list-item v-else :key="item.text" link :to="item.link" active-class="green white--text">
 						<v-list-item-action>
 							<v-icon>{{ item.icon }}</v-icon>
 						</v-list-item-action>

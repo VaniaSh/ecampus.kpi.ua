@@ -6,13 +6,13 @@ const state = {
 };
 
 const getters = {
-    isAuthenticated: state => !!state.user,    
+    isAuthenticated: state => true,    
     StateUser: state => state.user,
     userId: state => state.user?.id,
 };
 
 const actions = {
-    async AUTH_LOGIN({commit}, User) {
+    async AUTH_LOGIN({commit}, User) { 
 		try{
 			const res = await axios.post('/auth/login', User);
 			console.log(res);

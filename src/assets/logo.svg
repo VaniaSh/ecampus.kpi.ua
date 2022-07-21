@@ -1,1 +1,19 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.5 100"><defs><style>.cls-1{fill:#1697f6;}.cls-2{fill:#7bc6ff;}.cls-3{fill:#1867c0;}.cls-4{fill:#aeddff;}</style></defs><title>Artboard 46</title><polyline class="cls-1" points="43.75 0 23.31 0 43.75 48.32"/><polygon class="cls-2" points="43.75 62.5 43.75 100 0 14.58 22.92 14.58 43.75 62.5"/><polyline class="cls-3" points="43.75 0 64.19 0 43.75 48.32"/><polygon class="cls-4" points="64.58 14.58 87.5 14.58 43.75 100 43.75 62.5 64.58 14.58"/></svg>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_438_1573)">
+<path d="M32.4197 21.0703V29.1197C32.4197 30.4121 31.368 31.4638 30.0756 31.4638H9.91681C8.62445 31.4638 7.57275 30.4121 7.57275 29.1197V21.0703C8.67532 21.5701 16.7398 25.226 18.0124 25.8029C19.2758 26.3756 20.7174 26.3756 21.9801 25.8029C23.0829 25.3029 31.0435 21.6941 32.4197 21.0703Z" fill="url(#paint0_linear_438_1573)"/>
+<path d="M39.9882 13.3426C39.9405 12.4316 39.4087 11.6375 38.5725 11.2473L21.037 3.06405C20.3756 2.75542 19.617 2.75526 18.9558 3.06405L1.42007 11.2473C-0.486349 12.1369 -0.468613 14.851 1.44468 15.7183C15.9375 22.2885 18.1685 23.2999 18.9805 23.6681C19.6269 23.9608 20.3653 23.961 21.012 23.6681C30.7019 19.2752 27.9704 20.5134 37.6548 16.1232V35.9955C37.6548 36.6428 38.1796 37.1675 38.8268 37.1675C39.4741 37.1675 39.9989 36.6428 39.9989 35.9955C39.9989 11.8247 40.0048 13.4719 39.9882 13.3426Z" fill="url(#paint1_linear_438_1573)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_438_1573" x1="19.9962" y1="21.0703" x2="19.9962" y2="31.4638" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2AC194"/>
+<stop offset="1" stop-color="#1AAD9C"/>
+</linearGradient>
+<linearGradient id="paint1_linear_438_1573" x1="19.9999" y1="2.83252" x2="19.9999" y2="37.1675" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2AC194"/>
+<stop offset="1" stop-color="#1AAD9C"/>
+</linearGradient>
+<clipPath id="clip0_438_1573">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,31 +1,18 @@
 import Vue from 'vue';
-import VueRouter from 'vue-router';
-import TreeView from '../views/TreeView.vue';
-import FolderTree from '../views/FolderTree.vue';
 import Login from '../views/Login.vue';
 import store from "../store";
+import VueRouter from 'vue-router';
+
 
 Vue.use(VueRouter)
 
 const routes = [
 	{
-		path: '/tree',
-		name: 'TreeView',
-		component: TreeView,
-		meta: { requiresAuth: true },
-	},
-	{
-		path: '/folder-tree',
-		name: 'FolderTree',
-		component: FolderTree,
-		meta: { requiresAuth: true },
-	},
-
-	{
 		path: '/login',
 		name: 'Login',
 		component: Login,
 		meta: { isAuth: true },
+		// meta: { requiresAuth: true },
 	},
 	//   {
 	//     path: '/about',
@@ -45,25 +32,25 @@ const router = new VueRouter({
 
 
 
-router.beforeEach((to, from, next) => {
-	if (to.matched.some((record) => record.meta.requiresAuth)) {
-		if (store.getters.isAuthenticated) {
-			next();
-			return;
-		}
-		next("/login");
-	} else {
-		next();
-	}
+// router.beforeEach((to, from, next) => {
+// 	if (to.matched.some((record) => record.meta.requiresAuth)) {
+// 		if (store.getters.isAuthenticated) {
+// 			next();
+// 			return;
+// 		}
+// 		next("/login");
+// 	} else {
+// 		next();
+// 	}
 
-	if (to.matched.some((record) => record.meta.isAuth)) {
-		if (store.getters.isAuthenticated) {
-			return router.push({ name: 'TreeView' }).catch(() => { });
-		}
-		next();
-	}
+// 	if (to.matched.some((record) => record.meta.isAuth)) {
+// 		if (store.getters.isAuthenticated) {
+// 			return router.push({ name: 'TreeView' }).catch(() => { });
+// 		}
+// 		next();
+// 	}
 
-});
+// });
 
 
 

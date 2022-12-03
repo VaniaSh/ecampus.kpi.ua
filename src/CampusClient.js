@@ -18,8 +18,8 @@ export const config = {
     'login.kpi.ua',
     'localtest.me',
     'api.localtest.me',
-    'ecampus.localtest.me',
-  ],
+    'ecampus.localtest.me'
+  ]
 };
 
 /**

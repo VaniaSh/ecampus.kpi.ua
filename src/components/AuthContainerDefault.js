@@ -52,17 +52,17 @@ const AuthContainerDefault = () => {
       apiFail={apiFail}
       dismissInvalid={dismissInvalid}
     >
-      <div className='form-group'>
-        <a
-          className='btn btn-block btn-social btn-facebook'
-          href={campus.generateFacebookAuthorizationLink()}
-        >
-          <div className='icon'>
-            <span className='fa fa-facebook' />
-          </div>
-          Увiйти через Facebook
-        </a>
-      </div>
+      {/*<div className='form-group'>*/}
+      {/*  <a*/}
+      {/*    className='btn btn-block btn-social btn-facebook'*/}
+      {/*    href={campus.generateFacebookAuthorizationLink()}*/}
+      {/*  >*/}
+      {/*    <div className='icon'>*/}
+      {/*      <span className='fa fa-facebook' />*/}
+      {/*    </div>*/}
+      {/*    Увiйти через Facebook*/}
+      {/*  </a>*/}
+      {/*</div>*/}
 
       {/*<div className="form-group">*/}
       {/*  <a className="btn btn-block btn-social btn-kpi-id" href="/kpiid">*/}
